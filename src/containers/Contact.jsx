@@ -102,6 +102,8 @@ export default function Contact({ width }) {
                   name='name'
                   label='Name'
                   variant='filled'
+                  value={name}
+                  onchange={(e) => setName(e.target.value)}
                 />
                 <TextField
                   className='mb-5'
@@ -110,6 +112,8 @@ export default function Contact({ width }) {
                   name='email'
                   label='Email'
                   variant='filled'
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
 
                 <TextField
@@ -121,8 +125,15 @@ export default function Contact({ width }) {
                   variant='filled'
                   multiline
                   rows={8}
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                 />
-                <Button type='submit' variant='contained' size='large' color='primary'>
+                <Button
+                  type='submit'
+                  variant='contained'
+                  size='large'
+                  color='primary'
+                >
                   Submit
                 </Button>
               </form>
