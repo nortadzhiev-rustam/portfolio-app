@@ -80,10 +80,10 @@ export default function Contact({ width }) {
               </div>
             </Paper>
           </div>
-          <div className='col-12 col-xl-4 col-lg-4 col-md-12 col-sm-12'>
+          <div className='col-12 col-xl-4 col-lg-4 col-md-12 h-100 col-sm-12'>
             <Paper className='h-100 p-4 pt-5' elevation={10}>
               <form
-                className='d-flex flex-column flex-wrap'
+                className='d-flex flex-column h-100'
                 netlify
                 name='contact'
                 onSubmit={handleSubmit}
