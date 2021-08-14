@@ -6,7 +6,6 @@ import { createTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import Projects from './containers/Projects';
 import Skills from './containers/Skils';
-import Testimonials from './containers/Testimonials';
 import Contact from './containers/Contact';
 function useMediaQuery() {
   const [screenSize, setScreenSize] = useState([0, 0]);
