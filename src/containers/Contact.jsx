@@ -37,8 +37,8 @@ export default function Contact({ width }) {
     >
       <Paper elevation={10} style={{ padding: 30, height: '100%' }}>
         <div className='row'>
-          <div className='col-12 col-xl-8 col-lg-8 col-md-12 col-sm-12 position-relative'>
-            <Paper elevation={10} className='mb-5'>
+          <div className='col-12 col-xl-8 col-lg-8 col-md-12 col-sm-12 '>
+            <Paper elevation={10} className='mb-5 position-relative'>
               <iframe
                 width='100%'
                 height={width > 800 ? '940' : '640'}
