@@ -103,7 +103,7 @@ export default function Contact({ width }) {
                   label='Name'
                   variant='filled'
                   value={name}
-                  onchange={(e) => setName(e.target.value)}
+                  onChange={(e) => setName(e.target.value)}
                 />
                 <TextField
                   className='mb-5'
