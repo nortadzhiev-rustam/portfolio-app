@@ -35,7 +35,7 @@ export default function Contact({ width }) {
         height: width > 800 ? 1000 : 700,
       }}
     >
-      <Paper elevation={10} style={{ padding: 30, height: '100%' }}>
+      <Paper elevation={10} style={{ padding: 30 }}>
         <div className='row'>
           <div className='col-12 col-xl-8 col-lg-8 col-md-12 col-sm-12 position-relative'>
             <Paper elevation={10}>
