@@ -32,13 +32,13 @@ export default function Contact({ width }) {
       style={{
         margin: 20,
         paddingLeft: width > 599 ? 70 : 60,
-        height: width > 800 ? 1000 : 700,
+        height: width > 800 ? 1000 : 1600,
       }}
     >
       <Paper elevation={10} style={{ padding: 30, display: 'flex', flexWrap: 'wrap' }}>
         <div className='row'>
-          <div className='col-12 col-xl-8 col-lg-8 col-md-12 col-sm-12 position-relative'>
-            <Paper elevation={10}>
+          <div className='col-12 col-xl-8 col-lg-8 col-md-12 col-sm-12 '>
+            <Paper elevation={10} className='mb-5 position-relative'>
               <iframe
                 width='100%'
                 height={width > 800 ? '940' : '640'}
@@ -80,10 +80,10 @@ export default function Contact({ width }) {
               </div>
             </Paper>
           </div>
-          <div className='col-12 col-xl-4 col-lg-4 col-md-12 col-sm-12'>
+          <div className='col-12 col-xl-4 col-lg-4 col-md-12 h-100 col-sm-12'>
             <Paper className='h-100 p-4 pt-5' elevation={10}>
               <form
-                className='d-flex flex-column'
+                className='d-flex flex-column h-100'
                 netlify
                 name='contact'
                 onSubmit={handleSubmit}
@@ -103,7 +103,7 @@ export default function Contact({ width }) {
                   label='Name'
                   variant='filled'
                   value={name}
-                  onchange={(e) => setName(e.target.value)}
+                  onChange={(e) => setName(e.target.value)}
                 />
                 <TextField
                   className='mb-5'
